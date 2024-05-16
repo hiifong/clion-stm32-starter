@@ -49,7 +49,7 @@ endif ()
 add_definitions(-DUSE_HAL_DRIVER -DSTM32F103xB -DUSE_STDPERIPH_DRIVER -DSTM32F10X_MD)
 
 include_directories(libs/stm32f10x/inc include)
-file(GLOB_RECURSE SOURCES libs/stm32f10x/startup_stm32f10x_md.s libs/stm32f10x/src/*.c src/*.c)
+file(GLOB_RECURSE SOURCES libs/stm32f10x/startup_stm32f103c8tx.s libs/stm32f10x/src/*.c src/*.c)
 
 set(LINKER_SCRIPT ${CMAKE_SOURCE_DIR}/libs/stm32f10x/STM32F103C8Tx_FLASH.ld)
 
